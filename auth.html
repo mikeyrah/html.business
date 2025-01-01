@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - Stewart-Tate & Co.</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1 class="logo">Stewart-Tate & Co.</h1>
+        </div>
+        </header>
+
+<!-- Authentication Forms -->
+<main>
+  <div class="auth-container">
+    <div id="auth-forms">
+      <!-- Registration Form -->
+      <form id="register-form">
+        <h2>Register</h2>
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required>
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" required>
+        <button type="submit">Register</button>
+        </form>
+
+<!-- Login Form -->
+<form id="login-form" style="display: none;">
+  <h2>Login</h2>
+  <label for="login-email">Email</label>
+  <input type="email" id="login-email" required>
+  <label for="login-password">Password</label>
+  <input type="password" id="login-password" required>
+  <button type="submit">Login</button>
+  </form>
+
+<!-- Toggle Forms -->
+<p id="toggle-forms">
+  <a href="#" id="toggle-to-login">Already have an account? Login</a>
+  <a href="#" id="toggle-to-register" style="display: none;">Need an account? Register</a>
+  </p>
+  </div>
+  </div>
+  </main>
+
+<!-- Footer -->
+<div class="container">
+  <p>&copy; 2024 Stewart-Tate & Co. All Rights Reserved.</p>
+  </div>
+  </footer>
+
+  <script src="auth.js"></script>
+  <script src="script.js"</script>
+  </body>
+  </html>

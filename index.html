@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Stewart-Tate & Co.</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Stewart-Tate and Co Homepage</title>
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Hello World</h1>
+ <!-- Navigation -->
+ <header>
+  <div class="container">
+    <h1 class="logo.jpg">Stewart-Tate & Co.</h1>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="shop.html">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html"#Skincare>Skincare</a></li>
+            <li><a href="shop.html"#Haircare>Haircare</a></li>
+            <li><a href="shop.html"#HomeGoods>Home Goods</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li id="auth-link"><a href="auth.html"
+      </ul>
+      <button id="sidebar-toggle" class="sidebar-toggle">=</button>
+    </nav>
+    </div>
+  </header>
+
+<!-- Sidebar for Mobile -->
+<div id="sidebar" class="sidebar">
+  <button id="sidebar-close" class="sidebar-close">x</button>
+  <ul class="sidebar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+  <a href="index.html"></a>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Discover Your Style</h1>
+      <p class="hero-subtitle">Discover our featured products, seasonal sales, and exclusive promotions!</p>
+      <a href="shop.html" class="cta-button">Browse Products</a>
+    </div>
+<!-- Hero Banners -->
+<div class="hero-banners">
+  <div class="banner" style="background-image: url('images/seasonal-sale.jpg');">
+    <div class="banner-text">
+      <h2>Seasonal Sale</h2>
+      <p>Up to 50% off select items!</p>
+      <a href="shop.html" class="banner-link">Explore</a>
+    </div>
+  </div>
+  <div class="banner" style="background-image: url('images/featured-products.jpg');">
+    <div class="banner-text">
+      <h2>Featured Products</h2>
+      <p>Handpicked for you</p>
+      <a href="shop.html" class="banner-link">View Products</a>
+    </div>
+  </div>
+  <div class="banner" style="background-image: url('images/promotion.jpg');">
+    <div class="banner-text">
+      <h2>Exclusive Promotions</h2>
+      <p>Don't miss out!</p>
+      <a href="shop.html" class="banner-link">Learn More</a>
+    </div>
+  </div>
+</div>
+  </section>
+
+<!-- Search Results -->
+<div id="search-results" class="search-results"></div>
+
+  <!-- categories Section -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2>Shop By Category</h2>
+      <div class="category-grid">
+        <div class="category-item">
+          <img src="assets/men.jpg" alt="Skincare">
+          <h3>Skincare</h3>
+        </div>
+        <div class="category-item">
+          <img src="assets/women.jpg" alt="Bodycare">
+          <h3>Bodycare</h3>
+        </div>
+        <div class="category-item">
+          <img src="assets/electronics.jpg" alt="Haircare">
+          <h3>Haircare</h3>
+        </div>
+        <div class="category-item">
+          <img src="assets/women.jpg" alt="Holiday Edition">
+          <h3>Holiday Edition</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="featured-products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-item" data-id="1">
+          <img src="assets/product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>$20.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-item" data-id="2">
+          <img src="assets/product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$20.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-item" data-id="3">
+          <img src="assets/product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <p>$20.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2024 Stewart-Tate & Co. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+<script src="auth.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
